@@ -1,0 +1,54 @@
+#video {
+    visibility: hidden;
+    position: absolute;
+}
+
+* {
+    font-family: luminari, fantasy
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategray;
+}
+
+button {
+    height: 8vh;
+    width: 20vh;
+    color: black;
+    background-color: lightgray;
+    padding-top: 1%, 5%, 1%, 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 70%;
+    border-radius: 5px 20px;
+    margin-right: 50px;
+}
+
+#torch1 {
+    height: 200px;
+    width: 100px;
+    margin-right: 800px
+}
+
+#torch2 {
+    height: 200px;
+    width: 100px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#buttonbox {
+    display: flex;
+    flex-direction: row;
+}
