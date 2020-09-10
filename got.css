@@ -51,4 +51,23 @@ button {
 #buttonbox {
     display: flex;
     flex-direction: row;
+    visibility: hidden;
+}
+
+#buttonbox.show {
+    visibility: visible;
+}
+
+.boom {
+    color: orangered;
+    animation: fadeOut 5s forwards;
+    font-size: 24px;
+}
+
+@keyframes fadeOut {
+    80%{
+        opacity: 1;
+    }100% {
+    opacity: 0;
+    }
 }
