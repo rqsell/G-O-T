@@ -31,12 +31,15 @@ button {
     border-radius: 5px 20px;
     /* margin-right: 50px; */
 }
-#d1{
+
+#d1 {
     margin-right: 10px;
 }
-#d2{
+
+#d2 {
     margin-left: 10px;
 }
+
 #torch1 {
     height: 200px;
     width: 100px;
@@ -66,17 +69,20 @@ button {
 
 .boom {
     color: orangered;
-    animation: fadeOut 5s forwards;
+    animation: fadeOut 20s forwards;
     font-size: 24px;
 }
 
 @keyframes fadeOut {
-    80%{
+    80% {
         opacity: 1;
-    }100% {
-    opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
-#scenename{
+
+#scenename {
     text-align: center;
 }
