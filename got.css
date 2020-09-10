@@ -40,7 +40,7 @@ button {
 #torch1 {
     height: 200px;
     width: 100px;
-    margin-right: 800px
+    /* margin-right: 800px */
 }
 
 #torch2 {
@@ -50,7 +50,7 @@ button {
 
 #container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   
 }
 
 #buttonbox {
@@ -66,7 +66,7 @@ button {
 
 .boom {
     color: orangered;
-    animation: fadeOut 5s forwards;
+    animation: fadeOut 10s forwards;
     font-size: 24px;
 }
 
@@ -81,9 +81,14 @@ button {
     text-align: center;
 }
 .instructions{
-    width: 20vh;
+    width: 50vw;
     text-align: center;
 }
 #container{
-    display
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#outcome{
+    padding-bottom: 10vh;
 }

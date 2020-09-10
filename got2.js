@@ -91,7 +91,7 @@ class Scene {
     }
 }
 let scene1 = new Scene("Armies Assemble", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687153/scene_1__armies_assemble_aubjo7.mp4", "Drogon Attack", "Flaming Arrows", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687350/scene_1-_drogon_attacks_lmfaea.mp4", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687329/scene_1__shoot_arrows_ksmmjw.mp4", "Nice! You held them back for now!", "Congrats! You depleted their army by 10%!")
-let scene2 = new Scene("Viserion Attacks", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687308/scene_2__viserion_attack_fti6ks.mp4", "Dragon Fight", "Charge", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687312/scene_2__dragon_fight_1_zvxcna.mp4", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687347/Scene_2__official_Charge_kkvynu.mp4", "RuhRoh! While you watch the dragons fight, White Walkers kill and gain 25% of your army!", "Great job! You killed 50 White Walker soldiers!")
+let scene2 = new Scene("Viserion Attacks", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687308/scene_2__viserion_attack_fti6ks.mp4", "Dragon Fight", "Charge", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687312/scene_2__dragon_fight_1_zvxcna.mp4", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687347/Scene_2__official_Charge_kkvynu.mp4", "Hark! While you watch the dragons fight, White Walkers kill and gain 25% of your army!", "Great job! You killed 50 White Walker soldiers!")
 let scene3 = new Scene("Army is exhausted", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687242/army_exhausted_jduw3t.mp4", "Refuel", "Charge", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687242/drink_min0in.mp4", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687245/grief_l7evpa.mp4", "You drank and were merry! You have sufficiently rested and are now ready to fight!", "GAME OVER. Your army was exhausted and defeated! You have failed the North!")
 let scene4 = new Scene("Mormont Dies", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687253/mormont-dies_lyd8jd.mp4", "Grieve", "Rage", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687245/grief_l7evpa.mp4", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687246/dragonrage_akvr0h.mp4", "Daenerys is frozen with grief and does not retaliate. The army is struck with a vicious attack and depleted", "Daenerys and her dragons rage! They cut the White Walker army in half!")
 let scene5 = new Scene("Bran is in trouble!", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687288/NK_to_Bran2_pqk2ty.mp4", "Fight", "Retreat", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687242/drink_min0in.mp4", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687245/grief_l7evpa.mp4", "Theon redeems himself and hold off the Night King, sacrificing his own life to save Bran.", "GAME OVER. The Night King advances, killing Bran and ending the war.")
@@ -100,7 +100,7 @@ let snowstory = new Story("Jon Snow", "Longclaw")
 console.log(snowstory)
 snowstory.pickscene() //pick first scene
 document.querySelector("video").onended = function (e) {
-    // console.log("video onended")
+
     if (snowstory.decisionmade === true) {
         snowstory.showoutcome()
         snowstory.pickscene()
@@ -110,5 +110,3 @@ document.querySelector("video").onended = function (e) {
         document.querySelector("#buttonbox").classList.add("show")
     }
 }
-
-
