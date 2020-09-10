@@ -24,14 +24,19 @@ button {
     color: black;
     background-color: lightgray;
     padding-top: 1%, 5%, 1%, 5%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     opacity: 70%;
     border-radius: 5px 20px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
-
+#d1{
+    margin-right: 10px;
+}
+#d2{
+    margin-left: 10px;
+}
 #torch1 {
     height: 200px;
     width: 100px;
@@ -51,6 +56,7 @@ button {
 #buttonbox {
     display: flex;
     flex-direction: row;
+    /* justify-content: space-between; */
     visibility: hidden;
 }
 
@@ -70,4 +76,7 @@ button {
     }100% {
     opacity: 0;
     }
+}
+#scenename{
+    text-align: center;
 }
