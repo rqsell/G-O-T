@@ -1,7 +1,6 @@
 //war in 3 parts
 //From Jon's eyes
 
-
 class Story {
     constructor(character, weapon) {
         this.character = character
