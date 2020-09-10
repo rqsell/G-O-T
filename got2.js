@@ -88,9 +88,11 @@ let snowstory = new Story("Jon Snow", "Longclaw")
 console.log(snowstory)
 snowstory.pickscene() //pick first scene
 document.querySelector("video").onended = function (e) {
-    console.log("video onended")
     if (snowstory.decisionmade === true) {
         snowstory.pickscene()
         snowstory.decisionmade = false
     }
+}
+document.querySelector("video1").onended = function (e) {
+    console.log("onended")
 }
