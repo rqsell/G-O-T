@@ -34,7 +34,8 @@ button {
     border-radius: 5px 20px;
     /* margin-right: 50px; */
 }
-#startButton{
+
+#startButton {
     height: 13vh;
     width: 25vh;
     color: black;
@@ -131,4 +132,10 @@ button {
 
 #outcome {
     padding-bottom: 10vh;
+}
+
+#characters {
+    height: 25vh;
+    width: 15vw;
+    background: transparent;
 }
