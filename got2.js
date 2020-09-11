@@ -5,7 +5,7 @@ class Story {
     constructor(character, weapon) {
         this.character = character
         this.weapon = weapon
-        this.scenes = [scene1, scene2, scene3]
+        this.scenes = [scene1, scene2, scene3, scene4, scene5, scene6]
         this.scene = null
         this.url = ""
         this.index = 0
@@ -14,6 +14,9 @@ class Story {
     }
     pickscene() {
         this.scene = this.scenes[this.index]
+        if (!this.scene) {
+            alert("You won warrior!")
+        }
         this.url = this.scene.intro
         document.querySelector("#scenename").innerHTML = `<h2> ${this.scene.name}</h2>`
         this.changebutton()
@@ -39,6 +42,7 @@ class Story {
         this.url = this.scene[video]
         this.playvideo()
         this.decisionmade = true
+
     }
 
     showoutcome() {
@@ -99,17 +103,24 @@ let scene3 = new Scene("Army is exhausted", "https://res.cloudinary.com/dvo4cnun
 let scene4 = new Scene("Mormont Dies", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687253/mormont-dies_lyd8jd.mp4", "Grieve", "Rage", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687245/grief_l7evpa.mp4", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687246/dragonrage_akvr0h.mp4", "Daenerys is frozen with grief and does not retaliate. The army is struck with a vicious attack and depleted", "Daenerys and her dragons rage! They cut the White Walker army in half!")
 let scene5 = new Scene("Bran is in trouble!", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687288/NK_to_Bran2_pqk2ty.mp4", "Fight", "Retreat", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687242/drink_min0in.mp4", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687245/grief_l7evpa.mp4", "Theon redeems himself and hold off the Night King, sacrificing his own life to save Bran.", "GAME OVER. The Night King advances, killing Bran and ending the war.")
 let scene6 = new Scene("Final Fight", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687252/Night_King_to_Bran_ppzffv.mp4", "Defeat Night King", "Rage", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687294/Arya_kills_NK_qapqip.mp4", "https://res.cloudinary.com/dvo4cnunn/video/upload/v1599687246/dragonrage_akvr0h.mp4", "CONGRATS! You have won the war! Long live the King in the North! The Night King and his whitewalker army has been vanquished thank to you and warrior Arya Stark!", "GAME OVER. The war is lost. You surrender and join the Night King.")
-let snowstory = new Story("Jon Snow", "Longclaw")
+let snowstory = new Story()
 console.log(snowstory)
 snowstory.pickscene() //pick first scene
 document.querySelector("video").onended = function (e) {
-
     if (snowstory.decisionmade === true) {
         snowstory.showoutcome()
         snowstory.pickscene()
         snowstory.decisionmade = false
-    }
-    else {
+    } else {
         document.querySelector("#buttonbox").classList.add("show")
     }
 }
+
+// document.querySelector("#lobbyMusic").play()
+const urlParams = new URLSearchParams(window.location.search);
+const character = urlParams.get('character')
+const image = urlParams.get('image')
+document.querySelector("#characters").innerHTML=`<h3>You've selected ${character}</h3><img src="${image}" alt="${character}">`
+
+snowstory.character=character
+console.log(snowstory)

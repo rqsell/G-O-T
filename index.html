@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./got.css">
+</head>
+<audio id="lobbyMusic" autoplay loop hidden>
+    <source name="GOTmusic" src="./gotmusic.mp3">
+</audio>
+<body>
+    <header>
+        <h1>The Long Night</h1>
+        <h2>Choose Your Own Adventure - Game of Thrones Edition</h2>
+        <h3>Can you lead the North to victory and defeat the Night King?!</h3>
+    </header>
+    <section id="container">
+        <div>
+            <img id="torch1"
+                src="https://camo.githubusercontent.com/8d1abba57db320fab86b8a1a3f72b1d6533d2466/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4e556c426c5a313741546531792f67697068792e676966"
+                alt="torch">
+        </div>
+        <div id="instructionbox">
+            <h4 class="instructions">Watch each scene in the theater below and determine the next battle strategy! Jon
+                Snow, Daenerys Targaryen, and the rest of humanity is counting on you to lead the North to victory! You
+                must defeat the Night King or surrender and join his White Walker army!</h4>
+        </div>
+        <div>
+            <img id="torch2"
+                src="https://camo.githubusercontent.com/8d1abba57db320fab86b8a1a3f72b1d6533d2466/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4e556c426c5a313741546531792f67697068792e676966"
+                alt="torch">
+        </div>
+
+    </section>   
+    <div id="characters">
+    <img src="./daenerys.gif" alt="Daenerys">
+    <img src="./jonSnow.gif" alt="Jon Snow">
+    </div>      
+    <button hidden id="startButton">START!</button>
+
+    <!-- <canvas id="canvasLobby" width="600" height="500"></canvas>
+    <canvas id="character" width="600" height="500"></canvas> -->
+    <script>
+        let character=null
+        let image=null
+        document.querySelectorAll("img").forEach(img=>{
+            img.onclick=function(e){
+            console.log(this, this.src, this.alt)
+            character=this.alt
+            image=this.src
+            document.querySelector("#characters").innerHTML=`<h3>You've selected ${this.alt}</h3><img src="${this.src}" alt="${this.alt}">`
+            document.querySelector("#startButton").style.display="block"
+            document.querySelector("#lobbyMusic").play()
+        }
+
+        })
+        document.querySelector("#startButton").onclick=function(e){
+            window.location.href=`./got.html?character=${character}&image=${image}`
+        }
+        // const canvas = document.querySelector("#canvasLobby")
+        // const ctx = canvas.getContext("2d")
+        // const img = new Image();
+        //     img.onload = function() {
+        //     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        //     };
+        //     img.src = './characters.gif';
+
+        //     canvas.onclick=function(e) {
+        //         // console.log(e.target.position,e.target.x, e)
+        //         console.log(this)
+        //         window.t=this
+        //         console.log(e.offsetX, e.offsetY)
+        //         characterCtx.drawImage(img, e.offsetX, e.offsetY, canvas.width/5, 200, 0, 0, characterCanvas.width, characterCanvas.height)
+        //     }
+        //     const characterCanvas = document.querySelector("#character")
+        //     const characterCtx = characterCanvas.getContext("2d")
+    </script>    
+</body>
+</html>
