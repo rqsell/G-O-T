@@ -189,10 +189,6 @@ button {
     height: 15vh;
 }
 
-.ravenGif {
-    height: 10vh;
-    width: 6vw;
-}
 
 /* Dany text */
 #danytext {
@@ -281,4 +277,121 @@ button {
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
 
+}
+
+/* Khal Drogo */
+#redtext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.redwrap {
+    height: 13vh;
+    width: 5vw;
+    position: relative;
+}
+
+.redwrap:hover #redtext {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+
+}
+
+/* tyrion  */
+#tyriontext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 25%;
+    font-size: 8px;
+}
+
+.tyrionwrap {
+    height: 12vh;
+    width: 8vw;
+    position: relative;
+}
+
+.tyrionwrap:hover #tyriontext {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+
+}
+
+/* raven  */
+#raventext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.ravenGif {
+    height: 10vh;
+    width: 6vw;
+}
+
+.ravenwrap {
+    height: 10vh;
+    width: 6vw;
+    position: relative;
+}
+
+.ravenwrap:hover #raventext {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+}
+
+/* jon  */
+#jontext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.jonGif {
+    height: 20vh;
+    width: 10vw;
+}
+
+.jonwrap {
+    height: 20vh;
+    width: 10vw;
+    position: relative;
+}
+
+.jonwrap:hover #jontext {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
 }
