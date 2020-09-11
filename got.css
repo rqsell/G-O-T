@@ -194,6 +194,7 @@ button {
     width: 6vw;
 }
 
+/* Dany text */
 #danytext {
     visibility: hidden;
     position: absolute;
@@ -241,7 +242,6 @@ button {
 
 }
 
-
 .aryawrap {
     height: 14vh;
     width: 8vw;
@@ -257,3 +257,28 @@ button {
 }
 
 /* Khal Drogo */
+#khaltext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 25%;
+}
+
+.khalwrap {
+    height: 26vh;
+    width: 12vw;
+    position: relative;
+}
+
+.khalwrap:hover #khaltext {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+
+}
