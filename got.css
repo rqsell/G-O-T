@@ -113,17 +113,18 @@ button {
 
 #instructionbox {
     width: 50vw;
-    height: 40vh;
+    /* height: 40vh; */
     background-image: url("./scroll2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: 100%;
-
+    /* display: flex;
+    justify-content: center; */
 }
 
 .instructions {
     margin-left: 10%;
-    padding-top: 4vh;
+    /* padding-top: 4vh; */
     width: 40vw;
     opacity: 100%;
     text-align: center;
@@ -137,9 +138,29 @@ button {
 }
 
 #characters {
-    height: 20vh;
-    width: 15vw;
+    /* height: 20vh;
+    width: 15vw; */
     background: transparent;
     display: flex;
     justify-content: center;
+    align-items: baseline;
+} 
+#charactersRow2 {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.aryaGif{
+    height: 13vh;
+}
+.tyrionGif{
+    height: 12vh;
+}
+.redGif{
+    height: 15vh;
+}
+.ravenGif{
+    height: 10vh;
+    width: 8vw;
 }
