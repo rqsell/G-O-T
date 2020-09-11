@@ -112,6 +112,7 @@ button {
 
 #instructionbox {
     width: 50vw;
+    height: 40vh;
     background-image: url("./scroll2.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -121,6 +122,7 @@ button {
 
 .instructions {
     margin-left: 10%;
+    padding-top: 4vh;
     width: 40vw;
     opacity: 100%;
     text-align: center;
