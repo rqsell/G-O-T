@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 <audio id="lobbyMusic" autoplay loop hidden>
     <source name="GOTmusic" src="./gotmusic.mp3">
 </audio>
+
 <body>
     <header>
         <h1>The Long Night</h1>
@@ -32,37 +34,38 @@
                 alt="torch">
         </div>
 
-    </section>   
+    </section>
     <div id="characters">
-    <img src="./danyTransp.gif" alt="Daenerys">
-    <img src="./aryaTransp.gif" alt="Arya Stark">
-    <img src="./Drogo.gif" alt="Khal Drogo">
-    <img src="./Hound.gif" alt="The Hound">
-    <img src="./aryaTransp.gif" alt="Jon Snow">
-    <img src="./aryaTransp.gif" alt="The Red Woman">
-    <img src="./aryaTransp.gif" alt="Tyrion">
-    <img src="./aryaTransp.gif" alt="Three Eyed Raven">
+    <img class="danyGif" src="./danyTransp.gif" alt="Daenerys">
+    <img class="aryaGif" src="./aryaTransp.gif" alt="Arya Stark">
+    <img class="khalGif" src="./Drogo.gif" alt="Khal Drogo">
+    <img class="houndGif" src="./Hound.gif" alt="The Hound">
+    <img class="jonGif" src="./jsnowtransp.gif" alt="Jon Snow">
+    <img class="redGif" src="./red-woman.gif" alt="The Red Woman">
+    <img class="tyrionGif" src="./tyrion.gif" alt="Tyrion">
+    <img class="ravenGif" src="./crow.gif" alt="Three Eyed Raven">
     </div>      
     <button hidden id="startButton">START!</button>
 
     <!-- <canvas id="canvasLobby" width="600" height="500"></canvas>
     <canvas id="character" width="600" height="500"></canvas> -->
     <script>
-        let character=null
-        let image=null
-        document.querySelectorAll("img").forEach(img=>{
-            img.onclick=function(e){
-            console.log(this, this.src, this.alt)
-            character=this.alt
-            image=this.src
-            document.querySelector("#characters").innerHTML=`<h3>You've selected ${this.alt}</h3><img src="${this.src}" alt="${this.alt}">`
-            document.querySelector("#startButton").style.display="block"
-            document.querySelector("#lobbyMusic").play()
-        }
+        let character = null
+        let image = null
+        document.querySelectorAll("img").forEach(img => {
+            img.onclick = function (e) {
+                console.log(this, this.src, this.alt)
+                character = this.alt
+                image = this.src
+                document.querySelector("#characters").innerHTML =
+                    `<h3>You've selected ${this.alt}</h3><img src="${this.src}" alt="${this.alt}">`
+                document.querySelector("#startButton").style.display = "block"
+                document.querySelector("#lobbyMusic").play()
+            }
 
         })
-        document.querySelector("#startButton").onclick=function(e){
-            window.location.href=`./got.html?character=${character}&image=${image}`
+        document.querySelector("#startButton").onclick = function (e) {
+            window.location.href = `./got.html?character=${character}&image=${image}`
         }
         // const canvas = document.querySelector("#canvasLobby")
         // const ctx = canvas.getContext("2d")
@@ -81,6 +84,7 @@
         //     }
         //     const characterCanvas = document.querySelector("#character")
         //     const characterCtx = characterCanvas.getContext("2d")
-    </script>    
+    </script>
 </body>
+
 </html>
