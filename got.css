@@ -276,7 +276,7 @@ button {
     width: 15vw;
     position: relative;
 }
-.houndwrap:hover #houndtext {
+.houndwrap:hover #houndtext {  
     visibility: visible;
     font-size: 18px;
     opacity: 1;
