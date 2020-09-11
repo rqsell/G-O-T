@@ -4,7 +4,8 @@
 }
 
 * {
-    font-family: luminari, fantasy
+    font-family: luminari, fantasy;
+
 }
 
 header {
@@ -16,6 +17,8 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: darkslategray;
+    background-image: url("./stonewall.jpeg");
+
 }
 
 button {
@@ -53,7 +56,7 @@ button {
 
 #container {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
 #buttonbox {
@@ -69,11 +72,7 @@ button {
 
 .boom {
     color: orangered;
-<<<<<<< HEAD
-    animation: fadeOut 20s forwards;
-=======
     animation: fadeOut 10s forwards;
->>>>>>> bb59a535c92e4c7a9762f707a72539c5c5435cb4
     font-size: 24px;
 }
 
@@ -89,16 +88,35 @@ button {
 
 #scenename {
     text-align: center;
+
 }
-.instructions{
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#instructionbox {
     width: 50vw;
+    background-image: url("./scroll2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 100%;
+
+}
+
+.instructions {
+    margin-left: 10%;
+    width: 40vw;
+    opacity: 100%;
     text-align: center;
 }
-#container{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-#outcome{
+
+
+
+
+#outcome {
     padding-bottom: 10vh;
 }
