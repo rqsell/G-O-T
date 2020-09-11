@@ -2,12 +2,15 @@
     visibility: hidden;
     position: absolute;
 }
+
 * {
     font-family: luminari, fantasy;
 }
+
 header {
     text-align: center;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -17,6 +20,7 @@ body {
     background-image: url("./stonewall.jpeg");
 
 }
+
 button {
     height: 8vh;
     width: 20vh;
@@ -30,6 +34,7 @@ button {
     border-radius: 5px 20px;
     /* margin-right: 50px; */
 }
+
 #startButton {
     height: 13vh;
     width: 25vh;
@@ -42,21 +47,26 @@ button {
     border-radius: 5px 20px;
 
 }
+
 #d1 {
     margin-right: 10px;
 }
+
 #d2 {
     margin-left: 10px;
 }
+
 #torch1 {
     height: 200px;
     width: 100px;
     /* margin-right: 800px */
 }
+
 #torch2 {
     height: 200px;
     width: 100px;
 }
+
 #container {
     display: flex;
     justify-content: space-between;
@@ -68,33 +78,40 @@ button {
     /* justify-content: space-between; */
     visibility: hidden;
 }
+
 #buttonbox.show {
     visibility: visible;
 }
+
 .boom {
     color: black;
     animation: fadeOut 12s forwards;
     font-size: 24px;
     background-color: rgb(40, 20, 60, .4);
 }
+
 @keyframes fadeOut {
     80% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
 }
+
 #scenename {
     text-align: center;
 
 }
+
 #container {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
 #instructionbox {
     width: 50vw;
     height: 28vh;
@@ -103,26 +120,31 @@ button {
     background-repeat: no-repeat;
     opacity: 100%;
 }
-@media (max-width: 750px){
-    #instructionbox{
+
+@media (max-width: 750px) {
+    #instructionbox {
         font-size: 15px;
     }
 }
-@media (max-width: 650px){
-    #instructionbox{
+
+@media (max-width: 650px) {
+    #instructionbox {
         font-size: 14px;
     }
 }
-@media (max-width: 600px){
-    #instructionbox{
+
+@media (max-width: 600px) {
+    #instructionbox {
         font-size: 13px;
     }
 }
-@media (max-width: 490px){
-    #instructionbox{
+
+@media (max-width: 490px) {
+    #instructionbox {
         font-size: 12px;
     }
 }
+
 .instructions {
     margin-left: 10%;
     padding-top: 1.5vh;
@@ -130,12 +152,14 @@ button {
     opacity: 100%;
     text-align: center;
 }
+
 #outcome {
     margin-bottom: 5px;
     margin-top: 10px;
     width: 70vw;
-    text-align: center;    
+    text-align: center;
 }
+
 #characters {
     /* height: 20vh;
     width: 15vw; */
@@ -143,24 +167,93 @@ button {
     display: flex;
     justify-content: center;
     align-items: baseline;
-} 
+}
+
 #charactersRow2 {
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
-.aryaGif{
-    height: 13vh;
+
+.aryaGif {
+    height: 14vh;
+    width: auto;
 }
-.tyrionGif{
+
+.tyrionGif {
     height: 12vh;
 }
-.redGif{
+
+.redGif {
     height: 15vh;
 }
-.ravenGif{
+
+.ravenGif {
     height: 10vh;
-    width: 9vh;
-    margin-left: 46%;
+    width: 6vw;
 }
+
+#danytext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 7%;
+
+}
+
+.danyGif {
+    height: 20vh;
+    width: 15vw
+}
+
+.danywrap {
+    height: 20vh;
+    width: 15vw;
+    position: relative;
+}
+
+.danywrap:hover #danytext {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+
+}
+
+/* Arya text */
+#aryatext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 7%;
+
+}
+
+
+.aryawrap {
+    height: 14vh;
+    width: 8vw;
+    position: relative;
+}
+
+.aryawrap:hover #aryatext {
+    visibility: visible;
+    font-size: 12px;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+
+}
+
+/* Khal Drogo */
