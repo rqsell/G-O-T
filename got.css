@@ -118,7 +118,7 @@ button {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: 100%;
-    
+
 }
 
 .instructions {
@@ -143,23 +143,93 @@ button {
     display: flex;
     justify-content: center;
     align-items: baseline;
-} 
+}
+
 #charactersRow2 {
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
-.aryaGif{
-    height: 13vh;
+
+.aryaGif {
+    height: 14vh;
+    width: auto;
 }
-.tyrionGif{
+
+.tyrionGif {
     height: 12vh;
 }
-.redGif{
+
+.redGif {
     height: 15vh;
 }
-.ravenGif{
+
+.ravenGif {
     height: 10vh;
-    width: 8vw;
+    width: 6vw;
 }
+
+#danytext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 7%;
+
+}
+
+.danyGif {
+    height: 20vh;
+    width: 15vw
+}
+
+.danywrap {
+    height: 20vh;
+    width: 15vw;
+    position: relative;
+}
+
+.danywrap:hover #danytext {
+    visibility: visible;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+
+}
+
+/* Arya text */
+#aryatext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 7%;
+
+}
+
+
+.aryawrap {
+    height: 14vh;
+    width: 8vw;
+    position: relative;
+}
+
+.aryawrap:hover #aryatext {
+    visibility: visible;
+    font-size: 12px;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+
+}
+
+/* Khal Drogo */
