@@ -147,7 +147,7 @@ button {
 
 .instructions {
     margin-left: 10%;
-    padding-top: 3vh;
+    padding-top: 1.5vh;
     width: 40vw;
     opacity: 100%;
     text-align: center;
@@ -190,7 +190,6 @@ button {
 }
 
 
-/* Dany text */
 #danytext {
     visibility: hidden;
     position: absolute;
@@ -235,8 +234,8 @@ button {
     right: 0;
     text-align: center;
     padding-top: 7%;
-
 }
+
 
 .aryawrap {
     height: 14vh;
@@ -252,7 +251,8 @@ button {
 
 }
 
-/* Khal Drogo */
+
+/* khal Text */
 #khaltext {
     visibility: hidden;
     position: absolute;
@@ -263,17 +263,46 @@ button {
     left: 0;
     right: 0;
     text-align: center;
-    padding-top: 25%;
+    padding-top: 30%;
 }
 
 .khalwrap {
-    height: 26vh;
-    width: 12vw;
+    height: 25vh;
+    width: 15vw;
     position: relative;
 }
 
 .khalwrap:hover #khaltext {
     visibility: visible;
+    font-size: 18px;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+
+}
+
+/* Hound Text */
+#houndtext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 30%;
+}
+
+.houndwrap {
+    height: 25vh;
+    width: 15vw;
+    position: relative;
+}
+
+.houndwrap:hover #houndtext {
+    visibility: visible;
+    font-size: 18px;
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
 
