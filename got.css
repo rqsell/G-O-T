@@ -119,6 +119,7 @@ button {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     opacity: 100%;
+
 }
 
 @media (max-width: 750px) {
@@ -185,9 +186,6 @@ button {
     height: 12vh;
 }
 
-.redGif {
-    height: 15vh;
-}
 
 
 #danytext {
@@ -202,23 +200,45 @@ button {
     text-align: center;
     padding-top: 7%;
 
+
+
 }
 
 .danyGif {
     height: 20vh;
-    width: 15vw
+    width: 15vw;
+    padding-top: 100px;
 }
 
 .danywrap {
     height: 20vh;
     width: 15vw;
     position: relative;
+    top: -10%;
+
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+
+    }
+
+    100% {
+        color: 0
+    }
 }
 
 .danywrap:hover #danytext {
     visibility: visible;
-    opacity: 1;
+    animation: disappear 3s forwards;
     background: rgba(189, 194, 184, 0.6);
+
+
 
 }
 
@@ -236,6 +256,9 @@ button {
     padding-top: 7%;
 }
 
+.aryaGif {
+    padding-top: 100px;
+}
 
 .aryawrap {
     height: 14vh;
@@ -248,6 +271,7 @@ button {
     font-size: 12px;
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
+    animation: disappear 3s forwards;
 
 }
 
@@ -272,11 +296,16 @@ button {
     position: relative;
 }
 
+.khalGif {
+    padding-top: 100px;
+}
+
 .khalwrap:hover #khaltext {
     visibility: visible;
     font-size: 18px;
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
+    animation: disappear 3s forwards;
 
 }
 
@@ -300,12 +329,16 @@ button {
     position: relative;
 }
 
+.houndGif {
+    padding-top: 100px;
+}
+
 .houndwrap:hover #houndtext {
     visibility: visible;
     font-size: 18px;
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
-
+    animation: disappear 3s forwards;
 }
 
 /* Khal Drogo */
@@ -324,14 +357,22 @@ button {
 
 .redwrap {
     height: 13vh;
-    width: 5vw;
+    width: 8vw;
+    margin-right: 25px;
     position: relative;
+}
+
+.redGif {
+    padding-top: 50px;
+    height: 16vh;
+    width: 8vw;
 }
 
 .redwrap:hover #redtext {
     visibility: visible;
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
+    animation: disappear 3s forwards;
 
 }
 
@@ -352,15 +393,19 @@ button {
 
 .tyrionwrap {
     height: 12vh;
-    width: 8vw;
+    width: vw;
     position: relative;
+}
+
+.tyrionGif {
+    padding-top: 50px;
 }
 
 .tyrionwrap:hover #tyriontext {
     visibility: visible;
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
-
+    animation: disappear 3s forwards;
 }
 
 /* raven  */
@@ -380,6 +425,7 @@ button {
 .ravenGif {
     height: 10vh;
     width: 6vw;
+    padding-top: 50px;
 }
 
 .ravenwrap {
@@ -392,6 +438,7 @@ button {
     visibility: visible;
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
+    animation: disappear 3s forwards;
 }
 
 /* jon  */
@@ -411,6 +458,7 @@ button {
 .jonGif {
     height: 20vh;
     width: 10vw;
+    padding-top: 75px;
 }
 
 .jonwrap {
@@ -423,4 +471,5 @@ button {
     visibility: visible;
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
+    animation: disappear 3s forwards;
 }
