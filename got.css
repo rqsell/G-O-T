@@ -152,6 +152,7 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
     }
 
     #charactersRow2 {
@@ -240,8 +241,9 @@ button {
     /* height: 20vh;
     width: 15vw; */
     padding-top: 60%;
-    margin-left: -20%;
-
+    margin-left: -65%;
+    margin-right: 15%;
+    */
 }
 
 .danywrap {
@@ -375,7 +377,7 @@ button {
     animation: disappear 3s forwards;
 }
 
-/* Khal Drogo */
+/* Red woman */
 #redtext {
     visibility: hidden;
     position: absolute;
@@ -391,15 +393,16 @@ button {
 
 .redwrap {
     height: 13vh;
-    width: 8vw;
+    width: auto;
     margin-right: 25px;
     position: relative;
 }
 
 .redGif {
     padding-top: 25%;
-    width: 10vw;
-    height: auto
+    width: 12vw;
+    height: auto;
+    padding-left: 25%;
 }
 
 .redwrap:hover #redtext {
@@ -426,7 +429,7 @@ button {
 }
 
 .tyrionwrap {
-    height: 12vh;
+    height: 14vh;
     width: 4vw;
     position: relative;
 }
@@ -496,7 +499,7 @@ button {
 }
 
 .jonwrap {
-    height: 20vh;
+    height: 21vh;
     width: 10vw;
     position: relative;
 }
