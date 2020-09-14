@@ -273,299 +273,308 @@ button {
     width: auto;
 }
 
-.tyrionGif {
-    height: 12vh;
-}
+@media (min-width: 1000px) {
+    .aryaGif {
+        height: 130px;
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .tyrionGif {
+        height: 12vh;
+    }
 
 
 
-#danytext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 7%;
+    #danytext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 7%;
 
-}
+    }
 
-.danyGif {
-    /* height: 20vh;
+    .danyGif {
+        /* height: 20vh;
     width: 15vw; */
-    padding-top: 60%;
-    margin-left: -65%;
+        padding-top: 60%;
+        margin-left: -85%;
 
 
-}
+    }
 
-.danywrap {
-    height: 20vh;
-    width: 12vw;
-    position: relative;
+    .danywrap {
+        height: 20vh;
+        width: 12vw;
+        position: relative;
 
 
-}
+    }
 
-@keyframes disappear {
-    0% {
+    @keyframes disappear {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: .5;
+
+        }
+
+        100% {
+            color: 0
+        }
+    }
+
+    .danywrap:hover #danytext {
+        visibility: visible;
+        animation: disappear 3s forwards;
+        background: rgba(189, 194, 184, 0.6);
+
+
+
+    }
+
+    /* Arya text */
+    #aryatext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 7%;
+    }
+
+    .aryaGif {
+        padding-top: 100px;
+    }
+
+    .aryawrap {
+        height: 14vh;
+        width: 8vw;
+        position: relative;
+    }
+
+    .aryawrap:hover #aryatext {
+        visibility: visible;
+        font-size: 12px;
         opacity: 1;
-    }
-
-    50% {
-        opacity: .5;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
 
     }
 
-    100% {
-        color: 0
+
+    /* khal Text */
+    #khaltext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 30%;
     }
-}
 
-.danywrap:hover #danytext {
-    visibility: visible;
-    animation: disappear 3s forwards;
-    background: rgba(189, 194, 184, 0.6);
+    .khalwrap {
+        height: 25vh;
+        width: 15vw;
+        position: relative;
+    }
 
+    .khalGif {
+        padding-top: 75%;
+        padding-left: 20px;
+    }
 
+    .khalwrap:hover #khaltext {
+        visibility: visible;
+        font-size: 18px;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
 
-}
+    }
 
-/* Arya text */
-#aryatext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 7%;
-}
+    /* Hound Text */
+    #houndtext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 30%;
+    }
 
-.aryaGif {
-    padding-top: 100px;
-}
+    .houndwrap {
+        height: 25vh;
+        width: 15vw;
+        position: relative;
+    }
 
-.aryawrap {
-    height: 14vh;
-    width: 8vw;
-    position: relative;
-}
+    .houndGif {
+        padding-top: 75%;
+    }
 
-.aryawrap:hover #aryatext {
-    visibility: visible;
-    font-size: 12px;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
+    .houndwrap:hover #houndtext {
+        visibility: visible;
+        font-size: 18px;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
+    }
 
-}
+    /* Red woman */
+    #redtext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 25%;
+    }
 
+    .redwrap {
+        height: 8vh;
+        width: 8vw;
+        margin-right: 50px;
+        padding-top: 50px;
+        position: relative;
 
-/* khal Text */
-#khaltext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 30%;
-}
+    }
 
-.khalwrap {
-    height: 25vh;
-    width: 15vw;
-    position: relative;
-}
+    .redGif {
+        padding-top: 25%;
+        width: 10vw;
+        height: 16vh;
+        padding-left: 25%;
+        padding-bottom: -50px;
+    }
 
-.khalGif {
-    padding-top: 75%;
-}
+    .redwrap:hover #redtext {
+        visibility: visible;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
 
-.khalwrap:hover #khaltext {
-    visibility: visible;
-    font-size: 18px;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
+    }
 
-}
+    /* tyrion  */
+    #tyriontext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 25%;
+        font-size: 8px;
+    }
 
-/* Hound Text */
-#houndtext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 30%;
-}
+    .tyrionwrap {
+        height: 12vh;
+        width: 5vw;
+        position: relative;
+    }
 
-.houndwrap {
-    height: 25vh;
-    width: 15vw;
-    position: relative;
-}
+    .tyrionGif {
+        padding-top: 50px;
+    }
 
-.houndGif {
-    padding-top: 75%;
-}
+    .tyrionwrap:hover #tyriontext {
+        visibility: visible;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
+    }
 
-.houndwrap:hover #houndtext {
-    visibility: visible;
-    font-size: 18px;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-}
+    /* raven  */
+    #raventext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 25%;
+    }
 
-/* Red woman */
-#redtext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 25%;
-}
+    .ravenGif {
+        height: 10vh;
+        width: 6vw;
+        padding-top: 50px;
+    }
 
-.redwrap {
-    height: 8vh;
-    width: 8vw;
-    margin-right: 50px;
-    padding-top: 50px;
-    position: relative;
+    .ravenwrap {
+        height: 9vh;
+        width: 6vw;
+        position: relative;
+    }
 
-}
+    .ravenwrap:hover #raventext {
+        visibility: visible;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
+    }
 
-.redGif {
-    padding-top: 25%;
-    width: 10vw;
-    height: 16vh;
-    padding-left: 25%;
-    padding-bottom: -50px;
-}
+    /* jon  */
+    #jontext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 25%;
+    }
 
-.redwrap:hover #redtext {
-    visibility: visible;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-
-}
-
-/* tyrion  */
-#tyriontext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 25%;
-    font-size: 8px;
-}
-
-.tyrionwrap {
-    height: 12vh;
-    width: 5vw;
-    position: relative;
-}
-
-.tyrionGif {
-    padding-top: 50px;
-}
-
-.tyrionwrap:hover #tyriontext {
-    visibility: visible;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-}
-
-/* raven  */
-#raventext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 25%;
-}
-
-.ravenGif {
-    height: 10vh;
-    width: 6vw;
-    padding-top: 50px;
-}
-
-.ravenwrap {
-    height: 9vh;
-    width: 6vw;
-    position: relative;
-}
-
-.ravenwrap:hover #raventext {
-    visibility: visible;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-}
-
-/* jon  */
-#jontext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 25%;
-}
-
-.jonGif {
-    /* height: 20vh;
+    .jonGif {
+        /* height: 20vh;
     width: 10vw; */
-    padding-top: 75px;
-}
+        padding-top: 75px;
+    }
 
-.jonwrap {
-    height: 16vh;
-    width: 13vw;
-    position: relative;
-}
+    .jonwrap {
+        height: 16vh;
+        width: 13vw;
+        position: relative;
+    }
 
-.jonwrap:hover #jontext {
-    visibility: visible;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-}
+    .jonwrap:hover #jontext {
+        visibility: visible;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
+    }
