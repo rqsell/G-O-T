@@ -183,7 +183,6 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
     #charactersRow2 {
@@ -252,12 +251,18 @@ button {
         margin-left: 25px;
         margin-right: 25px;
     }
-
+}
+@media (min-width: 1400px) {
+    .aryaGif {
+        height: 130px;
+        width: auto;
+        /* margin-left: 25px; */
+        /* margin-right: 10px; */
+    }
+}
 .tyrionGif {
     height: 12vh;
 }
-
-
 
 #danytext {
     visibility: hidden;
@@ -344,11 +349,9 @@ button {
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
     animation: disappear 3s forwards;
-
 }
 
-
-/* khal Text */
+/* Khal Text */
 #khaltext {
     visibility: hidden;
     position: absolute;
