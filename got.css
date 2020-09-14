@@ -279,39 +279,11 @@ button {
         margin-left: 25px;
         margin-right: 25px;
     }
-<<<<<<< HEAD
-}
-@media (min-width: 1400px) {
-    .aryaGif {
-        height: 130px;
-        width: auto;
-        /* margin-left: 25px; */
-        /* margin-right: 10px; */
-    }
-}
-.tyrionGif {
-    height: 12vh;
-}
-
-#danytext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 7%;
-=======
 
     .tyrionGif {
         height: 12vh;
     }
-
-
-
+}
     #danytext {
         visibility: hidden;
         position: absolute;
@@ -323,7 +295,6 @@ button {
         right: 0;
         text-align: center;
         padding-top: 7%;
->>>>>>> 0b1f8ebee4fdc0042110af6d4a6b03f88f2eef75
 
     }
 
@@ -331,9 +302,8 @@ button {
         /* height: 20vh;
     width: 15vw; */
         padding-top: 60%;
-        margin-left: -85%;
-
-
+        margin-left: -75%;
+        
     }
 
     .danywrap {
@@ -392,29 +362,6 @@ button {
         position: relative;
     }
 
-<<<<<<< HEAD
-.aryawrap:hover #aryatext {
-    visibility: visible;
-    font-size: 12px;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-}
-
-/* Khal Text */
-#khaltext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 30%;
-}
-=======
     .aryawrap:hover #aryatext {
         visibility: visible;
         font-size: 12px;
@@ -438,7 +385,6 @@ button {
         text-align: center;
         padding-top: 30%;
     }
->>>>>>> 0b1f8ebee4fdc0042110af6d4a6b03f88f2eef75
 
     .khalwrap {
         height: 25vh;
