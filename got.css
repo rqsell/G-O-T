@@ -133,13 +133,11 @@ button {
         font-size: 14px;
     }
 }
-
 @media (max-width: 600px) {
     #instructionbox {
         font-size: 13px;
     }
 }
-
 @media (min-width: 860px) {
     .jonwrap {
         height: 12vh;
@@ -247,6 +245,13 @@ button {
     height: 14vh;
     width: auto;
 }
+@media (min-width: 1000px) {
+    .aryaGif {
+        height: 130px;
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 
 .tyrionGif {
     height: 12vh;
@@ -272,7 +277,7 @@ button {
     /* height: 20vh;
     width: 15vw; */
     padding-top: 60%;
-    margin-left: -65%;
+    margin-left: -85%;
 
 
 }
@@ -365,6 +370,7 @@ button {
 
 .khalGif {
     padding-top: 75%;
+    padding-left: 20px;
 }
 
 .khalwrap:hover #khaltext {
