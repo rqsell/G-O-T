@@ -163,6 +163,14 @@ button {
         margin-right: 15%;
 
     }
+
+    .instructions {
+        margin-left: 10%;
+        padding-top: 2.5vh;
+        width: 40vw;
+        opacity: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 490px) {
