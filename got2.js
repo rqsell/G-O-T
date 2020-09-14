@@ -55,7 +55,6 @@ class Story {
 
         }
     }
-
     playvideo() {
         var canvas = document.getElementById('canvas');
         var ctx = canvas.getContext('2d');
@@ -73,7 +72,6 @@ class Story {
         }, 0);
     }
 }
-
 
 document.querySelector('#d1').onclick = function (e) {
     console.log(e.target.id)

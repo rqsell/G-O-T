@@ -212,7 +212,6 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
     #charactersRow2 {
@@ -282,7 +281,9 @@ button {
         margin-left: 25px;
         margin-right: 25px;
     }
+
 }
+
 
 .tyrionGif {
     height: 12vh;
@@ -301,6 +302,7 @@ button {
     right: 0;
     text-align: center;
     padding-top: 7%;
+
 
 }
 
@@ -364,6 +366,7 @@ button {
     padding-top: 100px;
 }
 
+
 .aryawrap {
     height: 14vh;
     width: 8vw;
@@ -376,9 +379,53 @@ button {
     opacity: 1;
     background: rgba(189, 194, 184, 0.6);
     animation: disappear 3s forwards;
+}
+
+/* Khal Text */
+#khaltext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 30%;
+}
+
+.aryawrap:hover #aryatext {
+    visibility: visible;
+    font-size: 12px;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+    animation: disappear 3s forwards;
+}
+
+.aryawrap:hover #aryatext {
+    visibility: visible;
+    font-size: 12px;
+    opacity: 1;
+    background: rgba(189, 194, 184, 0.6);
+    animation: disappear 3s forwards;
 
 }
 
+
+/* khal Text */
+#khaltext {
+    visibility: hidden;
+    position: absolute;
+    color: black;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 30%;
+}
 
 /* khal Text */
 #khaltext {
