@@ -133,16 +133,38 @@ button {
         font-size: 14px;
     }
 }
+
 @media (max-width: 600px) {
     #instructionbox {
         font-size: 13px;
     }
 }
-@media (min-width: 860px) {
+
+@media (min-width: 1400px) {
     .jonwrap {
         height: 12vh;
         width: 10vw;
         position: relative;
+    }
+
+    #instructionbox {
+        margin-top: 130px;
+        width: 50vw;
+        height: 28vh;
+        background-image: url("./scroll2.png");
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        opacity: 100%;
+
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: -100px;
+    }
+
+    #container {
+        margin-bottom: -200px;
     }
 
     .danywrap {
@@ -151,6 +173,11 @@ button {
         position: relative;
         top: -10%;
 
+    }
+
+    .redGif {
+        height: 130px;
+        width: 50px;
     }
 
     .danyGif {
@@ -244,6 +271,7 @@ button {
     height: 14vh;
     width: auto;
 }
+
 @media (min-width: 1000px) {
     .aryaGif {
         height: 130px;
@@ -251,6 +279,7 @@ button {
         margin-left: 25px;
         margin-right: 25px;
     }
+<<<<<<< HEAD
 }
 @media (min-width: 1400px) {
     .aryaGif {
@@ -275,74 +304,95 @@ button {
     right: 0;
     text-align: center;
     padding-top: 7%;
+=======
 
-}
+    .tyrionGif {
+        height: 12vh;
+    }
 
-.danyGif {
-    /* height: 20vh;
+
+
+    #danytext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 7%;
+>>>>>>> 0b1f8ebee4fdc0042110af6d4a6b03f88f2eef75
+
+    }
+
+    .danyGif {
+        /* height: 20vh;
     width: 15vw; */
-    padding-top: 60%;
-    margin-left: -85%;
+        padding-top: 60%;
+        margin-left: -85%;
 
-
-}
-
-.danywrap {
-    height: 20vh;
-    width: 12vw;
-    position: relative;
-
-
-}
-
-@keyframes disappear {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: .5;
 
     }
 
-    100% {
-        color: 0
+    .danywrap {
+        height: 20vh;
+        width: 12vw;
+        position: relative;
+
+
     }
-}
 
-.danywrap:hover #danytext {
-    visibility: visible;
-    animation: disappear 3s forwards;
-    background: rgba(189, 194, 184, 0.6);
+    @keyframes disappear {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: .5;
+
+        }
+
+        100% {
+            color: 0
+        }
+    }
+
+    .danywrap:hover #danytext {
+        visibility: visible;
+        animation: disappear 3s forwards;
+        background: rgba(189, 194, 184, 0.6);
 
 
 
-}
+    }
 
-/* Arya text */
-#aryatext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 7%;
-}
+    /* Arya text */
+    #aryatext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 7%;
+    }
 
-.aryaGif {
-    padding-top: 100px;
-}
+    .aryaGif {
+        padding-top: 100px;
+    }
 
-.aryawrap {
-    height: 14vh;
-    width: 8vw;
-    position: relative;
-}
+    .aryawrap {
+        height: 14vh;
+        width: 8vw;
+        position: relative;
+    }
 
+<<<<<<< HEAD
 .aryawrap:hover #aryatext {
     visibility: visible;
     font-size: 12px;
@@ -364,189 +414,217 @@ button {
     text-align: center;
     padding-top: 30%;
 }
+=======
+    .aryawrap:hover #aryatext {
+        visibility: visible;
+        font-size: 12px;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
 
-.khalwrap {
-    height: 25vh;
-    width: 15vw;
-    position: relative;
-}
+    }
 
-.khalGif {
-    padding-top: 75%;
-    padding-left: 20px;
-}
 
-.khalwrap:hover #khaltext {
-    visibility: visible;
-    font-size: 18px;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
+    /* khal Text */
+    #khaltext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 30%;
+    }
+>>>>>>> 0b1f8ebee4fdc0042110af6d4a6b03f88f2eef75
 
-}
+    .khalwrap {
+        height: 25vh;
+        width: 15vw;
+        position: relative;
+    }
 
-/* Hound Text */
-#houndtext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 30%;
-}
+    .khalGif {
+        padding-top: 75%;
+        padding-left: 20px;
+    }
 
-.houndwrap {
-    height: 25vh;
-    width: 15vw;
-    position: relative;
-}
+    .khalwrap:hover #khaltext {
+        visibility: visible;
+        font-size: 18px;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
 
-.houndGif {
-    padding-top: 75%;
-}
+    }
 
-.houndwrap:hover #houndtext {
-    visibility: visible;
-    font-size: 18px;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-}
+    /* Hound Text */
+    #houndtext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 30%;
+    }
 
-/* Red woman */
-#redtext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 25%;
-}
+    .houndwrap {
+        height: 25vh;
+        width: 15vw;
+        position: relative;
+    }
 
-.redwrap {
-    height: 13vh;
-    width: auto;
-    margin-right: 25px;
-    position: relative;
-}
+    .houndGif {
+        padding-top: 75%;
+    }
 
-.redGif {
-    padding-top: 25%;
-    width: 12vw;
-    height: auto;
-    padding-left: 25%;
-}
+    .houndwrap:hover #houndtext {
+        visibility: visible;
+        font-size: 18px;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
+    }
 
-.redwrap:hover #redtext {
-    visibility: visible;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
+    /* Red woman */
+    #redtext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 25%;
+    }
 
-}
+    .redwrap {
+        height: 8vh;
+        width: 8vw;
+        margin-right: 50px;
+        padding-top: 50px;
+        position: relative;
 
-/* tyrion  */
-#tyriontext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 25%;
-    font-size: 8px;
-}
+    }
 
-.tyrionwrap {
-    height: 12vh;
-    width: 5vw;
-    position: relative;
-}
+    .redGif {
+        padding-top: 25%;
+        width: 10vw;
+        height: 16vh;
+        padding-left: 25%;
+        padding-bottom: -50px;
+    }
 
-.tyrionGif {
-    padding-top: 50px;
-}
+    .redwrap:hover #redtext {
+        visibility: visible;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
 
-.tyrionwrap:hover #tyriontext {
-    visibility: visible;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-}
+    }
 
-/* raven  */
-#raventext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 25%;
-}
+    /* tyrion  */
+    #tyriontext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 25%;
+        font-size: 8px;
+    }
 
-.ravenGif {
-    height: 10vh;
-    width: 6vw;
-    padding-top: 50px;
-}
+    .tyrionwrap {
+        height: 12vh;
+        width: 5vw;
+        position: relative;
+    }
 
-.ravenwrap {
-    height: 9vh;
-    width: 6vw;
-    position: relative;
-}
+    .tyrionGif {
+        padding-top: 50px;
+    }
 
-.ravenwrap:hover #raventext {
-    visibility: visible;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-}
+    .tyrionwrap:hover #tyriontext {
+        visibility: visible;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
+    }
 
-/* jon  */
-#jontext {
-    visibility: hidden;
-    position: absolute;
-    color: black;
-    opacity: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 25%;
-}
+    /* raven  */
+    #raventext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 25%;
+    }
 
-.jonGif {
-    /* height: 20vh;
+    .ravenGif {
+        height: 10vh;
+        width: 6vw;
+        padding-top: 50px;
+    }
+
+    .ravenwrap {
+        height: 9vh;
+        width: 6vw;
+        position: relative;
+    }
+
+    .ravenwrap:hover #raventext {
+        visibility: visible;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
+    }
+
+    /* jon  */
+    #jontext {
+        visibility: hidden;
+        position: absolute;
+        color: black;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding-top: 25%;
+    }
+
+    .jonGif {
+        /* height: 20vh;
     width: 10vw; */
-    padding-top: 75px;
-}
+        padding-top: 75px;
+    }
 
-.jonwrap {
-    height: 16vh;
-    width: 13vw;
-    position: relative;
-}
+    .jonwrap {
+        height: 16vh;
+        width: 13vw;
+        position: relative;
+    }
 
-.jonwrap:hover #jontext {
-    visibility: visible;
-    opacity: 1;
-    background: rgba(189, 194, 184, 0.6);
-    animation: disappear 3s forwards;
-}
+    .jonwrap:hover #jontext {
+        visibility: visible;
+        opacity: 1;
+        background: rgba(189, 194, 184, 0.6);
+        animation: disappear 3s forwards;
+    }
