@@ -49,7 +49,8 @@ class Story {
         if (this.outcome.includes("GAME OVER")) {
             alert(this.outcome)
             window.location.reload()
-        } else {
+        }
+        if (this.outcome.includes("CONGRATS!")) {
 
             document.querySelector("#outcome").innerHTML = `<div class="boom">${this.outcome}</div>`
 
