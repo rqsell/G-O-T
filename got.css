@@ -144,6 +144,38 @@ button {
     #instructionbox {
         font-size: 12px;
     }
+
+    #characters {
+        /* height: 20vh;
+        width: 15vw; */
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #charactersRow2 {
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .danyGif {
+        padding-top: 100px;
+
+    }
+
+    .jonGif {
+        height: auto;
+        width: 40vw;
+    }
+
+    .redGif {
+        width: 35vw;
+        height: auto
+    }
 }
 
 .instructions {
@@ -205,9 +237,11 @@ button {
 }
 
 .danyGif {
-    height: 20vh;
-    width: 15vw;
+    /* height: 20vh;
+    width: 15vw; */
     padding-top: 100px;
+    margin-left: -20%;
+
 }
 
 .danywrap {
@@ -364,8 +398,8 @@ button {
 
 .redGif {
     padding-top: 50px;
-    height: 16vh;
-    width: 8vw;
+    width: 10vw;
+    height: auto
 }
 
 .redwrap:hover #redtext {
@@ -456,8 +490,8 @@ button {
 }
 
 .jonGif {
-    height: 20vh;
-    width: 10vw;
+    /* height: 20vh;
+    width: 10vw; */
     padding-top: 75px;
 }
 
