@@ -239,7 +239,7 @@ button {
 .danyGif {
     /* height: 20vh;
     width: 15vw; */
-    padding-top: 100px;
+    padding-top: 60%;
     margin-left: -20%;
 
 }
@@ -331,7 +331,7 @@ button {
 }
 
 .khalGif {
-    padding-top: 100px;
+    padding-top: 75%;
 }
 
 .khalwrap:hover #khaltext {
@@ -364,7 +364,7 @@ button {
 }
 
 .houndGif {
-    padding-top: 100px;
+    padding-top: 75%;
 }
 
 .houndwrap:hover #houndtext {
@@ -397,7 +397,7 @@ button {
 }
 
 .redGif {
-    padding-top: 50px;
+    padding-top: 25%;
     width: 10vw;
     height: auto
 }
@@ -427,7 +427,7 @@ button {
 
 .tyrionwrap {
     height: 12vh;
-    width: vw;
+    width: 4vw;
     position: relative;
 }
 
