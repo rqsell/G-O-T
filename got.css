@@ -140,6 +140,31 @@ button {
     }
 }
 
+@media (min-width: 860px) {
+    .jonwrap {
+        height: 12vh;
+        width: 10vw;
+        position: relative;
+    }
+
+    .danywrap {
+        height: 20vh;
+        width: 15vw;
+        position: relative;
+        top: -10%;
+
+    }
+
+    .danyGif {
+        /* height: 20vh;
+        width: 15vw; */
+        padding-top: 60%;
+        margin-left: -65%;
+        margin-right: 15%;
+
+    }
+}
+
 @media (max-width: 490px) {
     #instructionbox {
         font-size: 12px;
@@ -233,8 +258,6 @@ button {
     text-align: center;
     padding-top: 7%;
 
-
-
 }
 
 .danyGif {
@@ -242,15 +265,15 @@ button {
     width: 15vw; */
     padding-top: 60%;
     margin-left: -65%;
-    margin-right: 15%;
-    */
+
+
 }
 
 .danywrap {
     height: 20vh;
-    width: 15vw;
+    width: 12vw;
     position: relative;
-    top: -10%;
+
 
 }
 
@@ -429,8 +452,8 @@ button {
 }
 
 .tyrionwrap {
-    height: 14vh;
-    width: 4vw;
+    height: 12vh;
+    width: 5vw;
     position: relative;
 }
 
@@ -466,7 +489,7 @@ button {
 }
 
 .ravenwrap {
-    height: 10vh;
+    height: 9vh;
     width: 6vw;
     position: relative;
 }
@@ -499,8 +522,8 @@ button {
 }
 
 .jonwrap {
-    height: 21vh;
-    width: 10vw;
+    height: 16vh;
+    width: 13vw;
     position: relative;
 }
 
