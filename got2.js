@@ -51,11 +51,10 @@ class Story {
             window.location.reload()
         } else {
 
+            document.querySelector("#outcome").innerHTML = `<div class="boom">${this.outcome}</div>`
+
         }
-        document.querySelector("#outcome").innerHTML = `<div class="boom">${this.outcome}</div>`
-
     }
-
 
     playvideo() {
         var canvas = document.getElementById('canvas');
